@@ -10,8 +10,7 @@
       amazon.aws.ec2_instance:
         instance_type: t3.micro
         name: "{{ item }}"
-        security_group: 
-          - shell-robo-common
+        security_group: "shell-robo-common"
         image_id: "{{ image_id }}"
       loop: "{{ Instances }}"
       when: action == "create"
