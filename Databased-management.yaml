@@ -12,7 +12,7 @@
         name: "{{ item }}"
         security_group: 
           - shell-robo-common
-        image_id: {{ image_id }}
+        image_id: "{{ image_id }}"
       loop: "{{ Instances }}"
       when: action == "create"
 
