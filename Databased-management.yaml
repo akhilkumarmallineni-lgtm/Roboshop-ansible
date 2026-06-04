@@ -4,7 +4,7 @@
   vars:
     Instances: ["mongodb", "redis", "mysql", "rabbitmq"]
     image_id: ami-0220d79f3f480ecf5
-    action: "create"
+    action: "terminate"
   tasks:
     - name: Create instances
       amazon.aws.ec2_instance:
